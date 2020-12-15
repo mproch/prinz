@@ -6,7 +6,7 @@ val nussknackerV = "0.3.0"
 val sttpV = "3.0.0-RC7"
 val scalatestV = "3.2.2"
 val minioS3V = "8.0.0"
-val circeV = "0.13.0"
+val circeV = "0.10.1"
 val testContainersV = "0.38.7"
 val paradiseV = "2.1.1"
 val typesafeConfigV = "1.4.1"
@@ -62,10 +62,10 @@ lazy val prinz = (project in file("prinz"))
         "com.softwaremill.sttp.client3" %% "core" % sttpV,
         "com.softwaremill.sttp.client3" %% "circe" % sttpV,
         "io.minio" % "minio" % minioS3V,
-        "io.circe" %% "circe-core" % circeV,
-        "io.circe" %% "circe-generic" % circeV,
-        "io.circe" %% "circe-parser" % circeV,
-        "io.circe" %% "circe-yaml" % circeV,
+        "io.circe" %% "circe-core" % circeV force(),
+        "io.circe" %% "circe-generic" % circeV force(),
+        "io.circe" %% "circe-parser" % circeV force(),
+        "io.circe" %% "circe-yaml" % circeV force(),
         "com.typesafe" % "config" % typesafeConfigV,
         "com.typesafe.scala-logging" %% "scala-logging" % typesafeLogV,
         "org.scala-lang" % "scala-reflect" % scalaV,

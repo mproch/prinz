@@ -6,7 +6,7 @@ scalaV="2.12"
 cd .. &&
 ./sbtwrapper prinz_sample/assembly &&
 cd - &&
-mkdir -p nussknacker/opt/prinz/ &&
+rm -rf "./nussknacker/opt/prinz-sample/*.jar" &&
 cp "../prinz_sample/target/scala-${scalaV}/prinz-sample-assembly-0.0.1-SNAPSHOT.jar" "./nussknacker/opt/prinz-sample/" &&
 
 # Add -d flag to hide environment startup
